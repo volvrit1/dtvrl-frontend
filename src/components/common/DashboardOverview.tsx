@@ -16,10 +16,10 @@ import {
   CategoryScale,
   Chart as ChartJS,
 } from "chart.js";
-import { useMemo, useRef, useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { Fetch } from "@/hooks/apiUtils";
-import { formatCurrency } from "@/hooks/general";
+import { useMemo, useRef, useEffect, useState } from "react";
+// import { formatCurrency } from "@/hooks/general";
 
 ChartJS.register(
   CategoryScale,
@@ -77,8 +77,8 @@ const DashboardOverview = () => {
               iconBg: "bg-rose-400",
             },
             {
-              title: "Revenue Change",
-              value: formatCurrency(booking?.currentRevenue),
+              title: "Total Likes",
+              value: booking?.currentRevenue,
               icon: <FaRegClock size={24} className="text-white" />,
               change: booking.percentageChangeInRevenue + " From Previous Data",
               iconBg: "bg-yellow-400",

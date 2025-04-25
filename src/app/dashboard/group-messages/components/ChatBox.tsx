@@ -128,7 +128,7 @@ export default function ChatBox({ user }: ChatBoxProps) {
       <div
         className="flex-1 overflow-y-auto p-4 space-y-4 relative"
         style={{
-          backgroundImage: "url('/assets/bg/bg2.jpg')",
+          backgroundImage: "url('/assets/bg/bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
